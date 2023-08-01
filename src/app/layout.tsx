@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+import { Providers } from '@app/redux/provider'
 
 const memesiqueFont = localFont({
   src: '../assets/fonts/Memesique-Regular.ttf',
@@ -24,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${memesiqueFont.variable} ${gretarosFont.variable}`}>{children}</body>
+      <body className={`${memesiqueFont.variable} ${gretarosFont.variable}`}><Providers>{children}</Providers></body>
     </html>
   )
 }

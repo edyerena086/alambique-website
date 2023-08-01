@@ -2,13 +2,15 @@
 import React, { FC } from 'react'
 
 // Import components
-import { SectionTitle } from '@app/components'
+import { Section, SectionTitle } from '@app/components'
 
 const Home: FC = () => {
   return (
-    <SectionTitle>
-      Welcome!
-    </SectionTitle>
+    <Section>
+      <SectionTitle>
+        Welcome!
+      </SectionTitle>
+    </Section>
   )
 }
 
